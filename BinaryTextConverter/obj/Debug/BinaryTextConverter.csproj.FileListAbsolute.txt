@@ -1,0 +1,10 @@
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\bin\Debug\BinaryTextConverter.exe.config
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\bin\Debug\BinaryTextConverter.exe
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\bin\Debug\BinaryTextConverter.pdb
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.csprojAssemblyReference.cache
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.Properties.Resources.resources
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.csproj.GenerateResource.cache
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.csproj.CoreCompileInputs.cache
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.exe
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.pdb
+C:\Users\11031122\source\repos\BinaryTextConverter\BinaryTextConverter\obj\Debug\BinaryTextConverter.BinaryTextConverter.resources
