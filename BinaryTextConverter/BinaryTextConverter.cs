@@ -83,7 +83,9 @@ namespace BinaryTextConverter
                 string result = "";
                 foreach (var substring in substrings)
                 {
+                    // strip string
                     string sub = String.Concat(substring.Where(c => !Char.IsWhiteSpace(c)));
+                    // Check for empty string or string that is not 8 characters
                     if (sub == "")
                     {
                         continue;
@@ -96,6 +98,7 @@ namespace BinaryTextConverter
                     var data = GetBytesFromBinaryString(sub);
                     var text = Encoding.ASCII.GetString(data);
                     bool isNotAscii = HasNonASCIIChars(text);
+                    // Can't convert if not ascii
                     if (isNotAscii)
                     {
                         OutputTextBox.Text = "Invalid binary string";
@@ -104,7 +107,7 @@ namespace BinaryTextConverter
                     else
                     {
                         string newResult = text;
-                        result = string.Join(" ", result, newResult);
+                        result = string.Join("", result, newResult);
                     }
 
                 }
