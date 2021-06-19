@@ -83,6 +83,12 @@ namespace BinaryTextConverter
                 string result = "";
                 foreach (var sub in subs)
                 {
+                    if (sub.Length < 8)
+                    {
+                        OutputTextBox.Text = "Invalid binary string";
+                        return;
+                    }
+
                     var data = GetBytesFromBinaryString(sub);
                     var text = Encoding.ASCII.GetString(data);
                     bool isNotAscii = HasNonASCIIChars(text);
