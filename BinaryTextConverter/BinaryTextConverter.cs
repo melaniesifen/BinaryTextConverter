@@ -79,16 +79,20 @@ namespace BinaryTextConverter
             if (BinaryTextBox.Text == "Binary:")
             {
                 string userInput = InputTextBox.Text;
-                string[] subs = userInput.Split(' ');
+                string[] substrings = userInput.Split(' ');
                 string result = "";
-                foreach (var sub in subs)
+                foreach (var substring in substrings)
                 {
-                    if (sub.Length < 8)
+                    string sub = String.Concat(substring.Where(c => !Char.IsWhiteSpace(c)));
+                    if (sub == "")
+                    {
+                        continue;
+                    }
+                    if (sub.Length != 8)
                     {
                         OutputTextBox.Text = "Invalid binary string";
                         return;
                     }
-
                     var data = GetBytesFromBinaryString(sub);
                     var text = Encoding.ASCII.GetString(data);
                     bool isNotAscii = HasNonASCIIChars(text);
